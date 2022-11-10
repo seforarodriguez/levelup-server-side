@@ -24,6 +24,7 @@ router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'gametypes', GameTypeView, 'gametype')
 router.register(r'events', EventView, 'event')
 router.register(r'games', GameView, 'game')
+# router.register(r'games/{', GameView, 'game')
 
 urlpatterns = [
     path('register', register_user),
